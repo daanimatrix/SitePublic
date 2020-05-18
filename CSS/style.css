@@ -1,0 +1,160 @@
+
+     @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+     body {
+        background-image:url(../img/fundo.jpg);
+     
+        
+    }
+
+  
+    li {
+      padding-left: 4px;
+      padding-right: 4px;
+      padding-top: 6px;
+      text-align: center;
+
+      
+    }
+
+    li a {
+      color: black;
+    }
+
+    li a:hover {
+      color: red;
+      text-decoration: none;
+      font-weight: 500;
+
+       }
+
+    /*.text-center {
+      font-size: 30px;
+      font-weight: 500;
+      color: ;
+      margin: 1px auto 1px auto;
+     
+    }*/
+
+   
+
+      .sem:hover{
+      color: red;
+      text-decoration: none;
+      font-weight: 500;
+
+        }
+
+      .black {
+        color: black;
+      }
+
+      .footer-pequeno {
+        size: 2000rem;
+    
+      }
+
+      .fonte-public {
+        
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      }
+
+
+      FONTES PRINCIPAIS*/
+
+      .fonte-arc {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+      }
+
+
+      /*FILTROS DO MENU PRINCIPAL*/
+
+      .filtro-2{
+        display: block;
+        height: 55px;
+        width: 400px;
+        margin: 10px;
+        border-radius: 10px;/*borda de arredondamento*/
+        border: solid 1px black;
+        font-size: 16px;
+        padding:0px 10px ;
+        background-color: rgba(248, 246, 246, 1);
+        outline: none;
+    }
+
+    .filtro-1{
+     
+      
+    
+      border-radius: 10px;/*borda de arredondamento*/
+      border: solid 1px black;
+      font-size: 13px;
+      margin: 10px;
+     
+     
+      background-color: rgba(248, 246, 246, 1);
+      
+  }
+
+  .container-fluid {
+    width: 100%;
+    margin: 0px;
+    border: 0px;
+  }
+
+.bg-personalizado{
+  background-color: rgba(31, 30, 30, 0.5);
+}
+
+.sidebar {   /*sera o navbar vertical*/
+	position:fixed; /*Sera posição fixo*/
+	width: 200px;/*Esquerda 20px*/
+	height: 100%;/*Altura 100%*/
+	background:#151719; /*fundo*/
+	left: -200px; /*Ele diminuiu -200px */
+	transition: all 500ms linear; /*Sera transitivo para todos e fara 500 milhe segudos e sera continuo */
+
+}
+
+
+/*Para modo mobile*/
+@media (min-width: 576px) { 
+
+  .container-fluid-10 {
+    width: 120%;
+    padding: 10px;
+    margin: 0px;
+    border: 0px;
+  }
+}
+
+
+@media (min-width: 768px) { 
+ 
+}
+
+
+@media (min-width: 992px) { 
+ 
+}
+
+@media (min-width: 1200px) { 
+  
+}
+
+/*BASE DO QUEM SOMOS*/
+
+.texto-1 {
+
+font-family: Arial, Helvetica, sans-serif;
+font-size: 15PX;
+color: #151719;
+}
+
+.borda {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  background-color: rgba(219, 191, 192, .2);
+  border: 1px solid rgba(225, 14, 33, .2);
+}

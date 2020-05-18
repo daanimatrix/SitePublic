@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Ark</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+<!--Esse é o logo da pagina da aba-->
+<link rel="shortcut icon" type="imagen/icon" href="img/icon.png"/>
+ 
+</head>
+
+
+<body>
+                                                   <!--NAVBAR ( MENU ) -->
+    <div class="container-fluid col-12 " style="box-shadow: 1px 1px 10px rgba(157, 157, 157, .5); margin: 2px solid black;">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light index-1 b-0 p-1">
+            <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            </button>-->
+
+            <a class="nav-link" href="index.html"><img src="img/logo3.png"> </a>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+              
+           
+            <div class="container d-flex justify-content-between align-items-center p-0 bt-0">
+             
+              <div class="d-flex my-0 " >
+              <input class="form-control mr-sm-1 col col-12" type="search" placeholder="Pesquisa" anton-label="Pesquisa">
+              <button class="btn btn-outline-info" data-toggle="collapse" >Procurar</button>
+              <button class="btn btn-outline-danger my-2 my-sm-0 m-1" data-toggle="collapse" data-target="#menu-lateral" aria-controls="menu-lateral" aria-expanded="false" aria-label="Toggle navigationtype="submit  type="submit"  >Mais
+               <!-- <span class="navbar-toggler-icon"></span>-->
+              </button>
+            </div>
+              
+                      <ul class="list-inline">
+                        <li class="list-inline-item"><a href="index.html"> Home</a></li>
+                        <li class="list-inline-item"><a href="#">Beneficios</a></li>
+                        <li class="list-inline-item"><a href="planos.html">Planos</a></li>
+                        <li class="list-inline-item"><a href="quemsomos.html">Quem somos</a></li>
+                        <li class="list-inline-item"><a href="contatos.html">Fala conosco</a></li>
+                      </ul>  
+                    
+              
+                
+            </div>
+      
+      </div>
+      <button type="button" class="btn  btn-danger badge-pill m-2 px-4 mr-5" data-toggle="modal" data-target="#exampleModalLong">LOGIN</button>
+
+              
+              
+            
+            
+        </nav>
+    
+                 <!--Tentando mostra essa parte de baixo-->
+                 <div class="container-fluid p-0 m-0 b-0 ">
+                  <div class="col col-12">
+                  <div class="collapse " id="menu-lateral">
+                      <div class="bg-personalizado p-4 sm-0">
+                        <ul class="nav nav-tabs">
+                          <li class="nav-item">
+                            <a class="nav-link active" href="#">Empresa</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Serviços</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Eventos</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Produtos</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                          </li>
+                        </ul>
+                        <form>
+                          <fieldset>
+                            <div class="row">
+                              <legend class="text-white">Local</legend>
+                              <div class="text-white d-flex p-2 align-items-center flex-wrap col col-12 flex-grow">
+                                <div class="">
+                                <select class="custom-select custom-select-sm filtro-1 col-11">
+                                  <option selected>Qual é o raio da procura ?</option>
+                                  <option value="1">1 km</option>
+                                  <option value="2">2 km</option>
+                                  <option value="4">4 km</option>
+                                  <option value="8">8 km</option>
+                                  <option value="10">10 km</option>
+                                  <option value="12">12 km</option>
+                                  <option value="15">15 km</option>
+                                  <option value="20">20 km</option>
+                                  <option value="25">25 km</option>
+                                </select></div>
+                              <input class="filtro-2 col  col-sm-12 col-md-3" type="text" name="Bairro" size="50" maxlength="50" placeholder="Bairro">
+                              <input class="filtro-2 col  col-sm-12 col-md-3" type="text" name="Cidade" size="50" maxlength="50" placeholder="Cidade">
+                              <input class="filtro-2 col  col-sm-12 col-md-3" type="text" name="Endereço" size="50" maxlength="50" placeholder="Nome da Empresa">
+                             </div>
+                            </div>
+                          </fieldset>
+
+                         <fieldset>
+                            <div class="row">
+                              <legend class="text-white">Local</legend>
+                              <div class="text-white d-flex p-2 align-items-center flex-wrap col col-12 flex-grow">
+                                <div class="">
+                               <!-- <select class="custom-select custom-select-sm filtro-2 col-3">
+                                  <option selected>Modalidade</option>
+                                  <option value="1">1 km</option>
+                                  <option value="2">2 km</option>
+                                  <option value="4">4 km</option>
+                                  <option value="8">8 km</option>
+                                  <option value="10">10 km</option>
+                                  <option value="12">12 km</option>
+                                  <option value="15">15 km</option>
+                                  <option value="20">20 km</option>
+                                  <option value="25">25 km</option>
+                                </select>--></div>
+                              <input class="filtro-2 col  col-sm-12 col-md-3" type="text" name="Bairro" size="50" maxlength="50" placeholder="Tipo de Empresa">
+                              <input class="filtro-2 col  col-sm-12 col-md-3" type="text" name="Cidade" size="50" maxlength="50" placeholder="Cidade">
+                              <input class="filtro-2 col  col-sm-12 col-md-3" type="text" name="Endereço" size="50" maxlength="50" placeholder="endereço">
+                             </div>
+                            </div>
+                          </fieldset>
+
+
+                          <!--é um alerta que fecha o recado depois-->
+                        <div class="alert alert-dark alert-dismissible fade show">
+                        Não é obrigatoriamente vc preencher todos os dados, coloca só os dados mais importantes que voce procura! <button class="close" data-dismiss="alert" aria-label="close" >
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        </form>
+
+
+ 
+</div>
+
+
+
+
+
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+
+  
+              <!--O fim da descrição-->
+          
+    </div>
+
+                                                                    <!-- FIM DO NAVBAR ( MENU ) -->
+
+                                                                     <!--SECTION ( CORPO ) -->
+<section>
+
+<div class="container">
+
+    <div class="card text-center">
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs">
+            <li class="nav-item">
+              <a class="nav-link " href="planos.html">Empresas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="planosf.html">Pessoas fisicas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="planose.html">Eventos</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Desativado</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card-body">
+          <h2 ><strong>Plano para Eventos</strong></h2><br>
+          <p class="card-text">Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas inventore repellendus porro alias beatae accusantium expedita cumque deleniti totam ipsa magnam facere, iste cupiditate odit impedit dolorem repellat. Dolore, possimus?</p>
+          <br><br>
+          <div class="card-group">
+            <div class="card">
+              <img class="card-img-top" src="img/quemsomos6.jpg" alt="Imagem de capa do card">
+              <div class="card-body">
+                <h5 class="card-title">Plano Simples</h5>  
+                <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior, para demonstração.</p>
+                <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="img/quemsomos5.jpg" alt="Imagem de capa do card">
+              <div class="card-body">
+                <h5 class="card-title">Plano Medio</h5>
+                <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+                <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="img/quemsomos4.jpg" alt="Imagem de capa do card">
+              <div class="card-body">
+                <h5 class="card-title">Plano Senior</h5>
+                <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este card tem o conteúdo ainda maior que o primeiro, para mostrar a altura igual, em ação.</p>
+                <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+              </div>
+            </div>
+          </div>
+         <br>
+         
+        </div>
+      </div>
+
+</div>
+
+</section>
+  </div>
+
+
+    </div>
+ .
+
+  </div>
+
+
+
+                                                        <!-- FOOTER -->
+
+<footer style="background: #d8d5d5;" >
+
+  <div class="row ">
+    <div class="col-12 justify-content-center p-2">
+      <div class="col p-3"> <h2 class="text-center">LOGOS DE REDE SOCIAIS</h2>
+      </div>
+    </div>
+
+ 
+    
+  </div >
+  <div style="background-color: #757575;">
+  <div class=" text-center text-white p-3 footer-pequeno"><small>© 2020 Copyright: EMPRESA PUBLIC<div class="text-danger fonte-public h4" href="#"> Publicark.com.br</div></small>
+  </div>
+  </div>
+  
+</footer>
+
+
+                                                        <!-- FIM DO FOOTER -->
+
+
+                                                          <!-- MODAL DO LOGIN -->
+<div class="modal fade justify-content-center align-items-center" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header ">
+        <h5 class="text-center" id="exampleModalLongTitle"><strong>PUBLIC - LOGIN</strong></h5>
+        <button type="button" data-dismiss="modal" aria-label="Close"> <!-- class="close"-->
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+<div class="modal-body">
+              
+  <!--Card content-->
+  <div class="card-body px-lg-5 pt-0">
+
+    <!-- Form -->
+    <form class="text-center" style="color: #757575;" action="#!">
+
+      <!-- Email -->
+   <div class="form-container">
+
+     <div class="form-group">
+       <label for="exampleInputEmail1">Email</label>
+       <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+     </div>
+      <!-- Password -->
+       <div class="form-group">
+       <label for="exampleInputPassword1">Password</label>
+       <input type="Password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+     </div>
+
+     <!--Esqueci senha -->
+     <div class=""><a href="#"  class="h6 p-0 m-2 sem"> Esqueci a senha</a></div>
+     <!--Marcador de email e senha-->
+<div class="row ">
+     <div class="checkbox m-3">
+       <label>
+         <input type="checkbox"> 
+       </label>
+      </div><div class="h4 pt-3 m-2"> Lembre-me</div>
+  </div>
+
+ <!--Esqueci senha -->
+ <div class="d-flex"><a href="cadastro.html"  class="h6  m-2 sem black"> <strong>CADASTRO</strong></a></div>
+
+      <!--Botões -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        <button type="submit" class="btn btn-danger ">Entrar</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+                                                           <!-- FIM DO MODAL DO LOGIN -->
+
+
+
+
+
+
+                                                           
+<!-- Footer -->
+<footer class="page-footer font-small cyan darken-3">
+
+  <!-- Footer Elements -->
+  <div class="container">
+
+    <!-- Grid row-->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-12 py-5">
+        <div class="mb-5 flex-center">
+
+          <!-- Facebook -->
+          <a class="fb-ic">
+            <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!-- Twitter -->
+          <a class="tw-ic">
+            <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!-- Google +-->
+          <a class="gplus-ic">
+            <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Linkedin -->
+          <a class="li-ic">
+            <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic">
+            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Pinterest-->
+          <a class="pin-ic">
+            <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
+          </a>
+        </div>
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row-->
+
+  </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+</html>
