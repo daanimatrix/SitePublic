@@ -36,8 +36,8 @@
               
                       <ul class="list-inline">
                         <li class="list-inline-item"><a href="index.html"> Home</a></li>
-                        <li class="list-inline-item"><a href="#">Beneficios</a></li>
-                        <li class="list-inline-item"><a href="#">Planos</a></li>
+                        <li class="list-inline-item"><a href="beneficios.html">Beneficios</a></li>
+                        <li class="list-inline-item"><a href="planos.html">Planos</a></li>
                         <li class="list-inline-item"><a href="quemsomos.html">Quem somos</a></li>
                         <li class="list-inline-item"><a href="contatos.html">Fala conosco</a></li>
                       </ul>  
@@ -55,96 +55,154 @@
             
         </nav>
     
-                 <!--Tentando mostra essa parte de baixo-->
-                 <div class="container-fluid p-0 m-0 b-0 ">
-                  <div class="col col-12">
-                  <div class="collapse " id="menu-lateral">
-                      <div class="bg-personalizado p-4 sm-0">
-                        <ul class="nav nav-tabs">
-                          <li class="nav-item">
-                            <a class="nav-link active" href="#">Empresa</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">Serviços</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">Eventos</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">Produtos</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                          </li>
-                        </ul>
-                        <form>
-                          <fieldset>
-                            <div class="row">
-                              <legend class="text-white">Local</legend>
-                              <div class="text-white d-flex p-2 align-items-center flex-wrap col col-12 flex-grow">
-                                <div class="">
-                                <select class="custom-select custom-select-sm filtro-1 col-11">
-                                  <option selected>Qual é o raio da procura ?</option>
-                                  <option value="1">1 km</option>
-                                  <option value="2">2 km</option>
-                                  <option value="4">4 km</option>
-                                  <option value="8">8 km</option>
-                                  <option value="10">10 km</option>
-                                  <option value="12">12 km</option>
-                                  <option value="15">15 km</option>
-                                  <option value="20">20 km</option>
-                                  <option value="25">25 km</option>
-                                </select></div>
-                              <input class="filtro-2 col  col-sm-12 col-md-3" type="text" name="Bairro" size="50" maxlength="50" placeholder="Bairro">
-                              <input class="filtro-2 col  col-sm-12 col-md-3" type="text" name="Cidade" size="50" maxlength="50" placeholder="Cidade">
-                              <input class="filtro-2 col  col-sm-12 col-md-3" type="text" name="Endereço" size="50" maxlength="50" placeholder="Nome da Empresa">
-                             </div>
-                            </div>
-                          </fieldset>
-
-                         <fieldset>
-                            <div class="row">
-                              <legend class="text-white">Local</legend>
-                              <div class="text-white d-flex p-2 align-items-center flex-wrap col col-12 flex-grow">
-                                <div class="">
-                               <!-- <select class="custom-select custom-select-sm filtro-2 col-3">
-                                  <option selected>Modalidade</option>
-                                  <option value="1">1 km</option>
-                                  <option value="2">2 km</option>
-                                  <option value="4">4 km</option>
-                                  <option value="8">8 km</option>
-                                  <option value="10">10 km</option>
-                                  <option value="12">12 km</option>
-                                  <option value="15">15 km</option>
-                                  <option value="20">20 km</option>
-                                  <option value="25">25 km</option>
-                                </select>--></div>
-                              <input class="filtro-2 col  col-sm-12 col-md-3" type="text" name="Bairro" size="50" maxlength="50" placeholder="Tipo de Empresa">
-                              <input class="filtro-2 col  col-sm-12 col-md-3" type="text" name="Cidade" size="50" maxlength="50" placeholder="Cidade">
-                              <input class="filtro-2 col  col-sm-12 col-md-3" type="text" name="Endereço" size="50" maxlength="50" placeholder="endereço">
-                             </div>
-                            </div>
-                          </fieldset>
-
-
-                          <!--é um alerta que fecha o recado depois-->
-                        <div class="alert alert-dark alert-dismissible fade show">
-                        Não é obrigatoriamente vc preencher todos os dados, coloca só os dados mais importantes que voce procura! <button class="close" data-dismiss="alert" aria-label="close" >
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                        </div>
-                        </form>
-
-
- 
-</div>
-
-
-
-
-
-                      </div>
-                    </div>
+                                <!--Tentando mostra essa parte de baixo-->
+                 
+                                <div class="container-fluid p-0 m-0 b-0 ">
+                                  <div class="col col-12">
+                                  <div class="collapse " id="menu-lateral">
+                                      <div class="bg-personalizado p-4 sm-0">
+                                        
+                                        <form>
+                                          <h3 class="text-white my-2">Local da Pesquisa:</h3>
+                                          <br>
+                
+                                          <div class="row">
+                                          
+                                            <div class="form-group m-2 col-3">
+                                              <label for="state"><strong>Estado</strong></label>
+                                              <select name="state" id="state" class="form-control">
+                                              <option selected="" value="">Selecione o Estado (UF)</option>
+                                              <option value="Acre">Acre</option>
+                                              <option value="Alagoas">Alagoas</option>
+                                              <option value="Amapá">Amapá</option>
+                                              <option value="Amazonas">Amazonas</option>
+                                              <option value="Bahia">Bahia</option>
+                                              <option value="Ceará">Ceará</option>
+                                              <option value="Distrito Federal">Distrito Federal</option>
+                                              <option value="Espírito Santo">Espírito Santo</option>
+                                              <option value="Goiás">Goiás</option>
+                                              <option value="Maranhão">Maranhão</option>
+                                              <option value="Mato Grosso">Mato Grosso</option>
+                                              <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+                                              <option value="Minas Gerais">Minas Gerais</option>
+                                              <option value="Pará">Pará</option>
+                                              <option value="Paraíba">Paraíba</option>
+                                              <option value="Paraná">Paraná</option>
+                                              <option value="Pernambuco">Pernambuco</option>
+                                              <option value="Piauí">Piauí</option>
+                                              <option value="Rio de Janeiro">Rio de Janeiro</option>
+                                              <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                                              <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+                                              <option value="Rondônia">Rondônia</option>
+                                              <option value="Roraima">Roraima</option>
+                                              <option value="Santa Catarina">Santa Catarina</option>
+                                              <option value="São Paulo">São Paulo</option>
+                                              <option value="Sergipe">Sergipe</option>
+                                              <option value="Tocantins">Tocantins</option>
+                                          
+                                          
+                                          </select>
+                
+                                          </div>
+                
+                                          <div class="col-4">
+                                            <label for="bairro"><strong>Bairro</strong></label>
+                                            <input class="form-control m-2" name="bairro" type="text" id="bairro">
+                                          </div>
+                
+                                          <div class="col-4">
+                                            <label for="rua"><strong>Rua</strong></label>
+                                            <input class="form-control m-2" name="rua" type="text" id="rua">
+                
+                                          </div>
+                                        </div>
+                
+                                        <h3 class="text-white my-2">Especificações:</h3>
+                                        <br>
+                                        <div>
+                                          <div class="row">
+                
+                                            
+                                            <legend class="col-sm-1">Tipos:</legend>
+                                            <div class="form-check col-sm-2 m-2">
+                    
+                                                <!--form-check-label é uma forma que deixa bem distribuido o input radio, e ele dividi bem a opção / E o checked deixa selecionado-->
+                                            
+                                                  <input type="radio" name="tipo-public" id="empresa" value="2" class="form-label-input" checked>
+                                                  <label for="empresa" class="form-check-label">Empresas</label>
+                                   
+                
+                                     
+                                                <input type="radio" name="tipo-public" id="eventos" value="1" class="form-label-input" >
+                                                <label for="eventos" class="form-check-label">Eventos</label>
+                                      
+                    
+                    
+                                     
+                                                <input type="radio" name="tipo-public" id="servicos" value="3" class="form-label-input" >
+                                                <label for="servicos" class="form-check-label">Serviços</label>
+                                    
+                
+                                   
+                                                  <input type="radio" name="tipo-public" id="produtos" value="3" class="form-label-input" >
+                                                  <label for="produtos" class="form-check-label">Produtos</label>
+                                      
+                                            </div>
+                
+                                            <div class="col-sm-4">
+                                              <div class="form-group">
+                                                <label for="bairro"><strong>Modelidade</strong></label>
+                                                <select name="state" id="state" class="form-control">
+                                                <option selected="" value="">Escolha o assunto</option>
+                                                <option value="Acre">livros</option>
+                                                <option value="Alagoas">eletronicos</option>
+                                                <option value="Amapá">Moveis</option>                   <!--FALTA ARRUMA OS VALORES-->
+                                                <option value="Amazonas">decoração</option>
+                                                <option value="Bahia">carros</option>
+                                                <option value="Ceará">geek</option>
+                                                <option value="Distrito Federal">Escritorio</option>
+                                                <option value="Espírito Santo">construção</option> 
+                                                <option value="Distrito Federal">Lanches</option>
+                                                <option value="Espírito Santo">games</option> 
+                    
+                                            </select>
+                    
+                                            </div>
+                
+                                        </div>
+                
+                
+                                        <div class="col-4">
+                                          <label for="busca"><strong>Busca:</strong></label>
+                                          <input class="form-control " name="busca" type="text" id="busca">
+                                        </div>
+                                        </div>
+                
+                                        
+                                        
+                                        
+                                        </form>
+                
+                
+                                          <!--é um alerta que fecha o recado depois-->
+                                        <div class="alert alert-dark alert-dismissible fade show">
+                                        Não é obrigatoriamente vc preencher todos os dados, coloca só os dados mais importantes que voce procura! <button class="close" data-dismiss="alert" aria-label="close" >
+                                            <span aria-hidden="true">&times;</span>
+                                          </button>
+                                        </div>
+                                        </form>
+                
+                
+                 
+                </div>
+                
+                
+                
+                
+                
+                                      </div>
+                                    </div>
+                                  </div>
                   </div>
               </div>
 
