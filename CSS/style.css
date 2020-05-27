@@ -1,5 +1,10 @@
 
-     @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+@font-face {
+  font-family: 'fontelogo';
+  src: url("fontes/Anton-Regular.otf");
+}
 
      body {
         background-image:url(../img/fundo.jpg);
@@ -166,7 +171,16 @@ color: #151719;
 
 .public{
 
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: 'Anton', sans-serif;
+}
+
+.text-public-red {
+
+  font-family: 'Anton', sans-serif;
+  color: red;
+  text-shadow: 1px 1px 1px black;
+
+   
 }
 
 

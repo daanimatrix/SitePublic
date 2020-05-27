@@ -14,7 +14,7 @@
 
 <body>
                                                    <!--NAVBAR ( MENU ) -->
-    <div class="container-fluid col-12 " style="box-shadow: 1px 1px 10px rgba(157, 157, 157, .5); margin: 2px solid black;">
+    <div class="container-fluid col-12 m-0 p-0 style="box-shadow: 1px 1px 10px rgba(157, 157, 157, .5); margin: 2px solid black;">
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light index-1 b-0 p-1">
             <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,17 +58,17 @@
                                 <!--Tentando mostra essa parte de baixo-->
                  
                                 <div class="container-fluid p-0 m-0 b-0 ">
-                                  <div class="col col-12">
+                                  <div class="col col-12 p-0 m-0">
                                   <div class="collapse " id="menu-lateral">
                                       <div class="bg-personalizado p-4 sm-0">
                                         
                                         <form>
-                                          <h3 class="text-white my-2">Local da Pesquisa:</h3>
+                                          <h3 class="text-white my-0 ">Local da Pesquisa:</h3>
                                           <br>
                 
                                           <div class="row">
                                           
-                                            <div class="form-group m-2 col-3">
+                                            <div class="form-group  col-3">
                                               <label for="state"><strong>Estado</strong></label>
                                               <select name="state" id="state" class="form-control">
                                               <option selected="" value="">Selecione o Estado (UF)</option>
@@ -105,26 +105,104 @@
                 
                                           </div>
                 
-                                          <div class="col-4">
-                                            <label for="bairro"><strong>Bairro</strong></label>
-                                            <input class="form-control m-2" name="bairro" type="text" id="bairro">
-                                          </div>
+                                          
+                                            <div class="form-group  col-3">
+                                              <label for="state"><strong>Cidade</strong></label>
+                                              <select name="state" id="state" class="form-control">
+                                              <option selected="" value="">Selecione o Estado (UF)</option>
+                                              <option value="Acre">Acre</option>
+                                              <option value="Alagoas">Alagoas</option>
+                                              <option value="Amapá">Amapá</option>
+                                              <option value="Amazonas">Amazonas</option>
+                                              <option value="Bahia">Bahia</option>
+                                              <option value="Ceará">Ceará</option>
+                                              <option value="Distrito Federal">Distrito Federal</option>
+                                              <option value="Espírito Santo">Espírito Santo</option>
+                                              <option value="Goiás">Goiás</option>
+                                              <option value="Maranhão">Maranhão</option>
+                                              <option value="Mato Grosso">Mato Grosso</option>
+                                              <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+                                              <option value="Minas Gerais">Minas Gerais</option>
+                                              <option value="Pará">Pará</option>
+                                              <option value="Paraíba">Paraíba</option>
+                                              <option value="Paraná">Paraná</option>
+                                              <option value="Pernambuco">Pernambuco</option>
+                                              <option value="Piauí">Piauí</option>
+                                              <option value="Rio de Janeiro">Rio de Janeiro</option>
+                                              <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                                              <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+                                              <option value="Rondônia">Rondônia</option>
+                                              <option value="Roraima">Roraima</option>
+                                              <option value="Santa Catarina">Santa Catarina</option>
+                                              <option value="São Paulo">São Paulo</option>
+                                              <option value="Sergipe">Sergipe</option>
+                                              <option value="Tocantins">Tocantins</option>
+                                          
+                                          
+                                          </select>
                 
-                                          <div class="col-4">
-                                            <label for="rua"><strong>Rua</strong></label>
-                                            <input class="form-control m-2" name="rua" type="text" id="rua">
-                
                                           </div>
+                                          
+                
+                                          <div class="form-group  col-3">
+                                            <label for="state"><strong>Bairro</strong></label>
+                                            <select name="state" id="state" class="form-control">
+                                            <option selected="" value="">Selecione o Estado (UF)</option>
+                                            <option value="Acre">Acre</option>
+                                            <option value="Alagoas">Alagoas</option>
+                                            <option value="Amapá">Amapá</option>
+                                            <option value="Amazonas">Amazonas</option>
+                                            <option value="Bahia">Bahia</option>
+                                            <option value="Ceará">Ceará</option>
+                                            <option value="Distrito Federal">Distrito Federal</option>
+                                            <option value="Espírito Santo">Espírito Santo</option>
+                                            <option value="Goiás">Goiás</option>
+                                            <option value="Maranhão">Maranhão</option>
+                                            <option value="Mato Grosso">Mato Grosso</option>
+                                            <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+                                            <option value="Minas Gerais">Minas Gerais</option>
+                                            <option value="Pará">Pará</option>
+                                            <option value="Paraíba">Paraíba</option>
+                                            <option value="Paraná">Paraná</option>
+                                            <option value="Pernambuco">Pernambuco</option>
+                                            <option value="Piauí">Piauí</option>
+                                            <option value="Rio de Janeiro">Rio de Janeiro</option>
+                                            <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                                            <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+                                            <option value="Rondônia">Rondônia</option>
+                                            <option value="Roraima">Roraima</option>
+                                            <option value="Santa Catarina">Santa Catarina</option>
+                                            <option value="São Paulo">São Paulo</option>
+                                            <option value="Sergipe">Sergipe</option>
+                                            <option value="Tocantins">Tocantins</option>
+                                        
+                                        
+                                        </select>
+              
                                         </div>
-                
-                                        <h3 class="text-white my-2">Especificações:</h3>
+                                       
+
+                                        <div class="form-group  col-2">
+                                          <label for="state"><strong>Bairro</strong></label>
+                                          <select name="state" id="state" class="form-control">
+                                          <option selected="" value="">Qual o Raio que você deseja?</option>
+                                          <option value="Acre">1 km</option>
+                                          <option value="Alagoas">2 km</option>
+                                          <option value="Amapá">3 km</option>
+                                          <option value="Amazonas">4 km</option>
+                                          </select>
+                                          </div>
+                                       
+
+                                          </div>
+                                        <h3 class="text-white ">Especificações:</h3>
                                         <br>
                                         <div>
                                           <div class="row">
                 
                                             
                                             <legend class="col-sm-1">Tipos:</legend>
-                                            <div class="form-check col-sm-2 m-2">
+                                            <div class="form-check col-sm-2 ">
                     
                                                 <!--form-check-label é uma forma que deixa bem distribuido o input radio, e ele dividi bem a opção / E o checked deixa selecionado-->
                                             
@@ -222,36 +300,36 @@
    
       <br>
       <div class="justify-content-end d-flex"> 
-        <div class="fonte-arc px-5">
+        <div class="public px-5">
         <h1 >CONTATOS</h1>
       </div>
       </div>
 
       <div class="container">
-        <div class="d-flex my-4 justify-content-center">
+        <div class="d-flex mx-4 justify-content-center">
       
-          <div class="card m-4" style="width: 18rem;">
-            <img class="card-img-top" src="img/quemsomos1.jpg" alt="Imagem de capa do card">
+          <div class="card mx-1 mb-1" style="width: 25rem;">
+            <img class="card-img-top p-2" src="img/quemsomos1.jpg" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title">Planos para pessoas juridicas</h5>
+              <h5 class="card-title"><strong>Planos para pessoas juridicas</strong></h5>
               <p class="card-text">Para conhecer mais sobre os planos que podemos oferecer para a sua  empresa.</p>
               <a href="#" class="btn btn-danger">Visitar</a>
             </div>
           </div>
 
-          <div class="card m-4" style="width: 18rem; ">
-            <img class="card-img-top" src="img/quemsomos2.jpg" alt="Imagem de capa do card">
+          <div class="card mx-1 mx-1 mb-1" style="width: 25rem;">
+            <img class="card-img-top p-2" src="img/quemsomos2.jpg" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title">Planos para pessoas fisicas</h5>
+              <h5 class="card-title"><strong>Planos para pessoas fisicas</strong></h5>
               <p class="card-text">Para você que quer conhecer mais de nossos planos / ou planos personalizados. </p>
               <a href="#" class="btn btn-danger">Visitar</a>
             </div>
           </div>
 
-          <div class="card m-4" style="width: 18rem;">
-            <img class="card-img-top" src="img/quemsomos4.jpg" alt="Imagem de capa do card">
+          <div class="card mx-1 mx-1 mb-1" style="width: 25rem;">
+            <img class="card-img-top p-2" src="img/quemsomos4.jpg" alt="Imagem de capa do card">
             <div class="card-body">
-              <h5 class="card-title">Planos para eventos</h5>
+              <h5 class="card-title"><strong>Planos para eventos</strong></h5>
               <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
               <a href="#" class="btn btn-danger">Visitar</a>
             </div>
@@ -260,9 +338,9 @@
           </div>
         </div>
       </div>
-
+<br>
       <h2 class="mx-5"><strong>Informações</strong></h2>
-    <div class="m-5 p-2">
+    <div class="mx-5 p-2 mt-2">
    
         <p>Pizza em São Paulo
           Lanches em São Paulo
@@ -292,29 +370,21 @@
           iFood Empresas</p>
     </div>
   
-      <div class="row ">
-    <div class="col-5 mx-5 p-2">
-      
-    <dl class="row align-items-center p-1 mx-5" >
-      <dt class="col-6">Municipio de Guarulhos</dt>
-      <dd class="col-6">Tel: (11) 97799-9966</dd>
-
-    </dl>
-
-    <dl class="row align-items-center p-1 mx-5" >
-      <dt class="col-6">Municipio de Osasco</dt>
-      <dd class="col-6">Tel: (11) 97799-9966</dd>
-
-    </dl>
-
-    <dl class="row align-items-center p-1 mx-5">
-      <dt class="col-6">Demais regioes</dt>
-      <dd class="col-6">Tel: (11) 97799-9966</dd>
+      <div class="row">
+    <div class="col-5 mx-2 p-2" >
+      <div class="d-flex align-items-center justify-content-center" style="height: 300px;">
+        <div >
+    <dl class="row align-items-center p-1 ml-5 " >
+      <div class="col-12"><H3 class="text-center"><strong>TELEFONE PARA CONTATO:</strong></H3></div>
+      <div class="col-12 text-danger"><H3 class="text-center">Tel: (11) 97799-9966</H3></div>
 
     </dl>
   </div>
-  <div class="col-5 mx-3 p-2">
-    <img src="img/pub.jpg" alt="logo" style="width: 30rem;" >
+  </div>
+
+  </div>
+  <div class="col-5 m-1 p-2" >
+    <img class="p-2" src="img/pub.jpg" alt="logo" style="width: 30rem;background-color: white; " >
   </div>
 </div>
 <br>
@@ -333,15 +403,15 @@
 
   <div class="row ">
     <div class="col-12 justify-content-center p-2">
-      <div class="col p-3"> <h2 class="text-center">TESTE2</h2>
+      <div class="col p-3"> <h2 class="text-center mx-2"><img class="mx-2" src="img/face.png"><img  class="mx-2" src="img/insta.png"><img  class="mx-2" src="img/yout.png"><img   class="mx-2" src="img/in.png"><img  class="mx-2" src="img/whats.png"></h2>
       </div>
     </div>
 
  
     
   </div >
-  <div style="background-color: #757575;">
-  <div class=" text-center text-white p-3 footer-pequeno"><small>© 2020 Copyright: EMPRESA PUBLIC<a class="text-dark fonte-public" href="#"> Publicark.com.br</a></small>
+  <div style="background-color: #5f5d5d;">
+  <div class=" text-center text-white p-3 footer-pequeno"><small>© 2020 Copyright: EMPRESA PUBLIC<div class="text-danger fonte-public" href=""> <H2 class="text-public-red">Publicark.com.br</H2></a></small>
   </div>
   </div>
   
