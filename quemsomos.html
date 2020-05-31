@@ -13,195 +13,294 @@
 
 
 <body>
-                                                   <!--NAVBAR ( MENU ) -->
-    <div class="container-fluid col-12 " style="box-shadow: 1px 1px 10px rgba(157, 157, 157, .5); margin: 2px solid black;">
+                                          <!--NAVBAR -->
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light index-1 b-0 p-1">
-            <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            </button>-->
+   
+   <nav class="navbar navbar-light bg-light navbar-expand-lg  col-12">
 
-            <a class="nav-link" href="index.html"><img src="img/logo3.png"> </a>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-              
-           
-            <div class="container d-flex justify-content-between align-items-center p-0 bt-0">
-             
-              <div class="d-flex my-0 " >
-              <input class="form-control mr-sm-1 col col-12" type="search" placeholder="Pesquisa" anton-label="Pesquisa">
-              <button class="btn btn-outline-info" data-toggle="collapse" >Procurar</button>
-              <button class="btn btn-outline-danger my-2 my-sm-0 m-1" data-toggle="collapse" data-target="#menu-lateral" aria-controls="menu-lateral" aria-expanded="false" aria-label="Toggle navigationtype="submit  type="submit"  >Mais
-               <!-- <span class="navbar-toggler-icon"></span>-->
-              </button>
-            </div>
-              
-                      <ul class="list-inline">
-                        <li class="list-inline-item"><a href="index.html"> Home</a></li>
-                        <li class="list-inline-item"><a href="beneficios.html">Beneficios</a></li>
-                        <li class="list-inline-item"><a href="planos.html">Planos</a></li>
-                        <li class="list-inline-item"><a href="quemsomos.html">Quem somos</a></li>
-                        <li class="list-inline-item"><a href="contatos.html">Fala conosco</a></li>
-                      </ul>  
-                    
-              
-                
-            </div>
+    <!--Logo-->
+    <div class="m-0 p-0 col-sm-12 col-xs-12 col-md-1 justify-content-center d-flex">
+      <div>
+    <a href="index.html" class="navbar-brand col-sm-12 col-xs-12  "><img src="img/logo3.png"></a>
+  </div>
+    </div>
+    
+    
+
+    <!--Botão de pesquisa-->
+    <form action="" class="form-inline my-2 my-lg-0  col-sm-12 col-xs-12 col-md-4" aria-expanded="false" >
+      <!--Pesquisa-->
+      <input class="form-control mr-sm-1 col-md-8 col-sm-12" type="search" placeholder="Pesquisa" anton-label="Pesquisa">
+      <button class="btn btn-outline-dark my-2 " type="submit">Procurar</button>
+     
       
-      </div>
-      <button type="button" class="btn  btn-danger badge-pill m-2 px-4 mr-5" data-toggle="modal" data-target="#exampleModalLong">LOGIN</button>
+  </form>
 
-              
-              
+  <!--Botão responsivo-->
+  <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar">
+    <spam class="navbar-toggler-icon"></spam>
+</button>
+
+  <button class="btn btn-danger my-2 my-sm-0 m-1 border-danger" data-toggle="collapse" data-target="#menu1" aria-controls="menu1" aria-expanded="false" aria-label="Toggle navigationtype="submit  type="submit"  >Mais
+    </button>
+
+    <div class="collapse navbar-collapse " id="navbar" >
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link flex-fill">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="beneficios.html" class="nav-link flex-fill ">Beneficios</a>
+          </li>
+          <li class="nav-item dropdown"> <!--vc colocando dropdown na linha ele estoura fora da linha, dando a opção de escolha-->
+            <a href="" class="nav-link dropdown-toggle " data-toggle="dropdown">Planos</a>
+            <div class="dropdown-menu">
+                <a href="planos.html" class="dropdown-item">Planos Empresarial</a>
+                <a href="planosp.html" class="dropdown-item">Plano Pessoa Fisica </a>
+                <a href="planose.html" class="dropdown-item">Planos para Eventos</a>
+            </div>
+        </li>
+        <li class="nav-item">
+          <a href="quemsomos.html" class="nav-link active flex-fill">Quem somos</a>
+      </li>
             
+            <li class="nav-item flex-grow">
+                <a href="contatos.html" class="nav-link  flex-fill">Fale conosco</a>
+            </li>
+        </ul>
+        <button type="button" class="btn  btn-danger badge-pill m-2 px-4 mr-5" data-toggle="modal" data-target="#exampleModalLong">LOGIN</button>
+
+    </div>
+</nav>
+                                                            <!--FIM DO NAVBAR TESTE-->
+    
+<!--Tentando mostra essa parte de baixo-->
+
+<div class="container-fluid p-0 m-0 b-0 ">
+  <div class="col col-12 p-0 m-0">
+  <div class="collapse " id="menu1">
+      <div class="bg-personalizado p-4 sm-0">
+        
+        <form>
+          <h3 class="text-white my-0 ">Local da Pesquisa:</h3>
+          <br>
+
+          <div class="row">
+          
+            <div class="form-group  col-3">
+              <label for="state"><strong>Estado</strong></label>
+              <select name="state" id="state" class="form-control">
+              <option selected="" value="">Selecione o Estado (UF)</option>
+              <option value="Acre">Acre</option>
+              <option value="Alagoas">Alagoas</option>
+              <option value="Amapá">Amapá</option>
+              <option value="Amazonas">Amazonas</option>
+              <option value="Bahia">Bahia</option>
+              <option value="Ceará">Ceará</option>
+              <option value="Distrito Federal">Distrito Federal</option>
+              <option value="Espírito Santo">Espírito Santo</option>
+              <option value="Goiás">Goiás</option>
+              <option value="Maranhão">Maranhão</option>
+              <option value="Mato Grosso">Mato Grosso</option>
+              <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+              <option value="Minas Gerais">Minas Gerais</option>
+              <option value="Pará">Pará</option>
+              <option value="Paraíba">Paraíba</option>
+              <option value="Paraná">Paraná</option>
+              <option value="Pernambuco">Pernambuco</option>
+              <option value="Piauí">Piauí</option>
+              <option value="Rio de Janeiro">Rio de Janeiro</option>
+              <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+              <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+              <option value="Rondônia">Rondônia</option>
+              <option value="Roraima">Roraima</option>
+              <option value="Santa Catarina">Santa Catarina</option>
+              <option value="São Paulo">São Paulo</option>
+              <option value="Sergipe">Sergipe</option>
+              <option value="Tocantins">Tocantins</option>
+          
+          
+          </select>
+
+          </div>
+
+          
+            <div class="form-group  col-3">
+              <label for="state"><strong>Cidade</strong></label>
+              <select name="state" id="state" class="form-control">
+              <option selected="" value="">Selecione o Estado (UF)</option>
+              <option value="Acre">Acre</option>
+              <option value="Alagoas">Alagoas</option>
+              <option value="Amapá">Amapá</option>
+              <option value="Amazonas">Amazonas</option>
+              <option value="Bahia">Bahia</option>
+              <option value="Ceará">Ceará</option>
+              <option value="Distrito Federal">Distrito Federal</option>
+              <option value="Espírito Santo">Espírito Santo</option>
+              <option value="Goiás">Goiás</option>
+              <option value="Maranhão">Maranhão</option>
+              <option value="Mato Grosso">Mato Grosso</option>
+              <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+              <option value="Minas Gerais">Minas Gerais</option>
+              <option value="Pará">Pará</option>
+              <option value="Paraíba">Paraíba</option>
+              <option value="Paraná">Paraná</option>
+              <option value="Pernambuco">Pernambuco</option>
+              <option value="Piauí">Piauí</option>
+              <option value="Rio de Janeiro">Rio de Janeiro</option>
+              <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+              <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+              <option value="Rondônia">Rondônia</option>
+              <option value="Roraima">Roraima</option>
+              <option value="Santa Catarina">Santa Catarina</option>
+              <option value="São Paulo">São Paulo</option>
+              <option value="Sergipe">Sergipe</option>
+              <option value="Tocantins">Tocantins</option>
+          
+          
+          </select>
+
+          </div>
+          
+
+          <div class="form-group  col-3">
+            <label for="state"><strong>Bairro</strong></label>
+            <select name="state" id="state" class="form-control">
+            <option selected="" value="">Selecione o Estado (UF)</option>
+            <option value="Acre">Acre</option>
+            <option value="Alagoas">Alagoas</option>
+            <option value="Amapá">Amapá</option>
+            <option value="Amazonas">Amazonas</option>
+            <option value="Bahia">Bahia</option>
+            <option value="Ceará">Ceará</option>
+            <option value="Distrito Federal">Distrito Federal</option>
+            <option value="Espírito Santo">Espírito Santo</option>
+            <option value="Goiás">Goiás</option>
+            <option value="Maranhão">Maranhão</option>
+            <option value="Mato Grosso">Mato Grosso</option>
+            <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+            <option value="Minas Gerais">Minas Gerais</option>
+            <option value="Pará">Pará</option>
+            <option value="Paraíba">Paraíba</option>
+            <option value="Paraná">Paraná</option>
+            <option value="Pernambuco">Pernambuco</option>
+            <option value="Piauí">Piauí</option>
+            <option value="Rio de Janeiro">Rio de Janeiro</option>
+            <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+            <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+            <option value="Rondônia">Rondônia</option>
+            <option value="Roraima">Roraima</option>
+            <option value="Santa Catarina">Santa Catarina</option>
+            <option value="São Paulo">São Paulo</option>
+            <option value="Sergipe">Sergipe</option>
+            <option value="Tocantins">Tocantins</option>
+        
+        
+        </select>
+
+        </div>
+        
+
+        <div class="form-group  col-2">
+          <label for="state"><strong>Bairro</strong></label>
+          <select name="state" id="state" class="form-control">
+          <option selected="" value="">Qual o Raio que você deseja?</option>
+          <option value="Acre">1 km</option>
+          <option value="Alagoas">2 km</option>
+          <option value="Amapá">3 km</option>
+          <option value="Amazonas">4 km</option>
+          </select>
+          </div>
+        
+
+          </div>
+        <h3 class="text-white ">Especificações:</h3>
+        <br>
+        <div>
+          <div class="row">
+
             
-        </nav>
-                                  <!--Tentando mostra essa parte de baixo-->
+            <legend class="col-sm-1">Tipos:</legend>
+            <div class="form-check col-sm-2 ">
+
+                <!--form-check-label é uma forma que deixa bem distribuido o input radio, e ele dividi bem a opção / E o checked deixa selecionado-->
+            
+                  <input type="radio" name="tipo-public" id="empresa" value="2" class="form-label-input" checked>
+                  <label for="empresa" class="form-check-label">Empresas</label>
+    
+
+      
+                <input type="radio" name="tipo-public" id="eventos" value="1" class="form-label-input" >
+                <label for="eventos" class="form-check-label">Eventos</label>
+      
+
+
+      
+                <input type="radio" name="tipo-public" id="servicos" value="3" class="form-label-input" >
+                <label for="servicos" class="form-check-label">Serviços</label>
+    
+
+    
+                  <input type="radio" name="tipo-public" id="produtos" value="3" class="form-label-input" >
+                  <label for="produtos" class="form-check-label">Produtos</label>
+      
+            </div>
+
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label for="bairro"><strong>Modelidade</strong></label>
+                <select name="state" id="state" class="form-control">
+                <option selected="" value="">Escolha o assunto</option>
+                <option value="Acre">livros</option>
+                <option value="Alagoas">eletronicos</option>
+                <option value="Amapá">Moveis</option>                   <!--FALTA ARRUMA OS VALORES-->
+                <option value="Amazonas">decoração</option>
+                <option value="Bahia">carros</option>
+                <option value="Ceará">geek</option>
+                <option value="Distrito Federal">Escritorio</option>
+                <option value="Espírito Santo">construção</option> 
+                <option value="Distrito Federal">Lanches</option>
+                <option value="Espírito Santo">games</option> 
+
+            </select>
+
+            </div>
+
+        </div>
+
+
+        <div class="col-4">
+          <label for="busca"><strong>Busca:</strong></label>
+          <input class="form-control " name="busca" type="text" id="busca">
+        </div>
+        </div>
+
+        
+        
+        
+        </form>
+
+
+          <!--é um alerta que fecha o recado depois-->
+        <div class="alert alert-dark alert-dismissible fade show">
+        Não é obrigatoriamente vc preencher todos os dados, coloca só os dados mais importantes que voce procura! <button class="close" data-dismiss="alert" aria-label="close" >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        </form>
+
+                
                  
-                                  <div class="container-fluid p-0 m-0 b-0 ">
-                                    <div class="col col-12">
-                                    <div class="collapse " id="menu-lateral">
-                                        <div class="bg-personalizado p-4 sm-0">
-                                          
-                                          <form>
-                                            <h3 class="text-white my-2">Local da Pesquisa:</h3>
-                                            <br>
-                  
-                                            <div class="row">
-                                            
-                                              <div class="form-group m-2 col-3">
-                                                <label for="state"><strong>Estado</strong></label>
-                                                <select name="state" id="state" class="form-control">
-                                                <option selected="" value="">Selecione o Estado (UF)</option>
-                                                <option value="Acre">Acre</option>
-                                                <option value="Alagoas">Alagoas</option>
-                                                <option value="Amapá">Amapá</option>
-                                                <option value="Amazonas">Amazonas</option>
-                                                <option value="Bahia">Bahia</option>
-                                                <option value="Ceará">Ceará</option>
-                                                <option value="Distrito Federal">Distrito Federal</option>
-                                                <option value="Espírito Santo">Espírito Santo</option>
-                                                <option value="Goiás">Goiás</option>
-                                                <option value="Maranhão">Maranhão</option>
-                                                <option value="Mato Grosso">Mato Grosso</option>
-                                                <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
-                                                <option value="Minas Gerais">Minas Gerais</option>
-                                                <option value="Pará">Pará</option>
-                                                <option value="Paraíba">Paraíba</option>
-                                                <option value="Paraná">Paraná</option>
-                                                <option value="Pernambuco">Pernambuco</option>
-                                                <option value="Piauí">Piauí</option>
-                                                <option value="Rio de Janeiro">Rio de Janeiro</option>
-                                                <option value="Rio Grande do Sul">Rio Grande do Sul</option>
-                                                <option value="Rio Grande do Norte">Rio Grande do Norte</option>
-                                                <option value="Rondônia">Rondônia</option>
-                                                <option value="Roraima">Roraima</option>
-                                                <option value="Santa Catarina">Santa Catarina</option>
-                                                <option value="São Paulo">São Paulo</option>
-                                                <option value="Sergipe">Sergipe</option>
-                                                <option value="Tocantins">Tocantins</option>
-                                            
-                                            
-                                            </select>
-                  
-                                            </div>
-                  
-                                            <div class="col-4">
-                                              <label for="bairro"><strong>Bairro</strong></label>
-                                              <input class="form-control m-2" name="bairro" type="text" id="bairro">
-                                            </div>
-                  
-                                            <div class="col-4">
-                                              <label for="rua"><strong>Rua</strong></label>
-                                              <input class="form-control m-2" name="rua" type="text" id="rua">
-                  
-                                            </div>
-                                          </div>
-                  
-                                          <h3 class="text-white my-2">Especificações:</h3>
-                                          <br>
-                                          <div>
-                                            <div class="row">
-                  
-                                              
-                                              <legend class="col-sm-1">Tipos:</legend>
-                                              <div class="form-check col-sm-2 m-2">
-                      
-                                                  <!--form-check-label é uma forma que deixa bem distribuido o input radio, e ele dividi bem a opção / E o checked deixa selecionado-->
-                                              
-                                                    <input type="radio" name="tipo-public" id="empresa" value="2" class="form-label-input" checked>
-                                                    <label for="empresa" class="form-check-label">Empresas</label>
-                                     
-                  
-                                       
-                                                  <input type="radio" name="tipo-public" id="eventos" value="1" class="form-label-input" >
-                                                  <label for="eventos" class="form-check-label">Eventos</label>
-                                        
-                      
-                      
-                                       
-                                                  <input type="radio" name="tipo-public" id="servicos" value="3" class="form-label-input" >
-                                                  <label for="servicos" class="form-check-label">Serviços</label>
-                                      
-                  
-                                     
-                                                    <input type="radio" name="tipo-public" id="produtos" value="3" class="form-label-input" >
-                                                    <label for="produtos" class="form-check-label">Produtos</label>
-                                        
-                                              </div>
-                  
-                                              <div class="col-sm-4">
-                                                <div class="form-group">
-                                                  <label for="bairro"><strong>Modelidade</strong></label>
-                                                  <select name="state" id="state" class="form-control">
-                                                  <option selected="" value="">Escolha o assunto</option>
-                                                  <option value="Acre">livros</option>
-                                                  <option value="Alagoas">eletronicos</option>
-                                                  <option value="Amapá">Moveis</option>                   <!--FALTA ARRUMA OS VALORES-->
-                                                  <option value="Amazonas">decoração</option>
-                                                  <option value="Bahia">carros</option>
-                                                  <option value="Ceará">geek</option>
-                                                  <option value="Distrito Federal">Escritorio</option>
-                                                  <option value="Espírito Santo">construção</option> 
-                                                  <option value="Distrito Federal">Lanches</option>
-                                                  <option value="Espírito Santo">games</option> 
-                      
-                                              </select>
-                      
-                                              </div>
-                  
-                                          </div>
-                  
-                  
-                                          <div class="col-4">
-                                            <label for="busca"><strong>Busca:</strong></label>
-                                            <input class="form-control " name="busca" type="text" id="busca">
-                                          </div>
-                                          </div>
-                  
-                                          
-                                          
-                                          
-                                          </form>
-                  
-                  
-                                            <!--é um alerta que fecha o recado depois-->
-                                          <div class="alert alert-dark alert-dismissible fade show">
-                                          Não é obrigatoriamente vc preencher todos os dados, coloca só os dados mais importantes que voce procura! <button class="close" data-dismiss="alert" aria-label="close" >
-                                              <span aria-hidden="true">&times;</span>
-                                            </button>
-                                          </div>
-                                          </form>
-                  
-                  
-                   
-                  </div>
-                  
-                  
-                  
-                  
-                  
-                                        </div>
+                </div>
+                
+                
+                
+                
+                
                                       </div>
                                     </div>
+                                  </div>
                   </div>
               </div>
 
@@ -221,10 +320,11 @@
    
       <br>
       <div class="justify-content-end d-flex"> 
-        <div class="fonte-arc px-5">
+        <div class="public px-5">
         <h1 >QUEM SOMOS</h1>
       </div>
       </div>
+      <hr>
 <br>
       <div class="card-deck">
         <div class="card">
@@ -255,7 +355,7 @@
       <br>
       <h2 style="color: red;">Empresa voltado a marketing digital </h2>
       <br>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, incidunt ullam doloremque tempora commodi fugiat, quidem enim deleniti quo libero illo. Doloribus, accusamus. Iste aut deleniti corrupti voluptates reiciendis voluptate?
+      <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, incidunt ullam doloremque tempora commodi fugiat, quidem enim deleniti quo libero illo. Doloribus, accusamus. Iste aut deleniti corrupti voluptates reiciendis voluptate?
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, incidunt ullam doloremque tempora commodi fugiat, quidem enim deleniti quo libero illo. Doloribus, accusamus. Iste aut deleniti corrupti voluptates reiciendis voluptate?
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, incidunt ullam doloremque tempora commodi fugiat, quidem enim deleniti quo libero illo. Doloribus, accusamus. Iste aut deleniti corrupti voluptates reiciendis voluptate?
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, incidunt ullam doloremque tempora commodi fugiat, quidem enim deleniti quo libero illo. Doloribus, accusamus. Iste aut deleniti corrupti voluptates reiciendis voluptate?
@@ -273,23 +373,23 @@
       <h2>Valores </h2>
       <br>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam omnis molestiae repellendus consequatur eos aliquid recusandae, cum accusantium impedit nemo eligendi amet esse nobis at non ipsum! Accusantium, minus harum?</p>
- <div class="col">
+ <div class="col mt-5">
    <div class="row">
-     <div class="col-7 m-0"><img class="" src="img/quemsomos7.jpg" alt="publicquemsomos">
+     <div class="col-sm-12 col-md-7 m-0"><img class="col-md-12 p-2  pb-4" src="img/quemsomos7.jpg" alt="publicquemsomos">
      </div>
-        <div class="col-5" style="box-shadow: black 1px 1px 2px;border: solid 1px black;">
+        <div class="col-sm-12 col-md-5" style="box-shadow: black 1px 1px 2px;border: solid 1px black;">
             <div class="m-2 flex-grow"  >
                 <div class="justify-content-center d-flex p-3 ">
                 <header><h4>Pensando em todos</h4></header>
                 </div>
-             <div class="col-12 align-items-center m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quam ab quidem illo libero earum vero aspernatur officiis aliquid rerum accusamus beatae voluptate praesentium vitae, corporis tenetur velit, quod at.</div>
+             <div class="col-sm-12  align-items-center m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quam ab quidem illo libero earum vero aspernatur officiis aliquid rerum accusamus beatae voluptate praesentium vitae, corporis tenetur velit, quod at.</div>
           </div>
       </div>
    </div>
  </div>
  <br>
       
- <div class="d-flex justify-content-center text-danger"><h3> Alguns beneficios</h3></div>
+ <div class="d-flex justify-content-center text-danger text-public-red mt-4"><h2> Alguns Beneficios</h2></div>
 
 
 
@@ -300,16 +400,16 @@
 <div class="container ">
   <div class="row"> 
 
-<div class="col-4 P-2 m-3 flex-grow borda"><strong>PROPAGANDAS</strong></div><div class="col-7 borda">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quam ipsam, doloribus dolorem consectetur atque natus autem rem vel numquam nam id nesciunt voluptates, perspiciatis cupiditate tempore. Accusantium, saepe nobis.</div>
+<div class="col-md-4 col-sm-12 P-2 m-3 flex-grow "><strong>PROPAGANDAS</strong></div><div class="col-md-7 col-sm-12 m-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quam ipsam, doloribus dolorem consectetur atque natus autem rem vel numquam nam id nesciunt voluptates, perspiciatis cupiditate tempore. Accusantium, saepe nobis.</div>
 <br>
-<div class="col-4 P-2 m-3 borda"><strong>FREEDBACK</strong></div><div class="col-7 borda">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati officia iusto pariatur fuga at iste quis aspernatur consequuntur excepturi repudiandae, sed vel modi id quae eligendi officiis velit exercitationem earum.<br></div>
+<div class="col-md-4 col-sm-12  P-2 m-3 "><strong>FREEDBACK</strong></div><div class="col-md-7 col-sm-12 m-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati officia iusto pariatur fuga at iste quis aspernatur consequuntur excepturi repudiandae, sed vel modi id quae eligendi officiis velit exercitationem earum.<br></div>
 
 
-<div class="col-4 P-2 m-3 borda"><strong>ORÇAMENTOS</strong></div><div class="col-7 borda" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod blanditiis a vel consequatur fugit nihil quaerat error ratione et! Molestias perspiciatis doloremque ad quam placeat sequi sapiente iste ex explicabo!</div>
+<div class="col-md-4 col-sm-12  P-2 m-3"><strong>ORÇAMENTOS</strong></div><div class="col-md-7 col-sm-12 m-3" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod blanditiis a vel consequatur fugit nihil quaerat error ratione et! Molestias perspiciatis doloremque ad quam placeat sequi sapiente iste ex explicabo!</div>
 <br>
-<div class="col-4 P-2 m-3 borda"><strong>LOCALIZAÇÃO DA EMPRESA</strong></div><div class="col-7 borda">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat nam inventore enim ducimus tenetur! Repellendus hic numquam nostrum a quasi obcaecati, exercitationem ipsum commodi optio accusantium perspiciatis ducimus illum provident?</div>
+<div class="col-md-4 col-sm-12  P-2 m-3 "><strong>LOCALIZAÇÃO DA EMPRESA</strong></div><div class="col-md-7 col-sm-12 m-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat nam inventore enim ducimus tenetur! Repellendus hic numquam nostrum a quasi obcaecati, exercitationem ipsum commodi optio accusantium perspiciatis ducimus illum provident?</div>
 <br>
-<div class="col-4 P-2 m-3 borda"><strong>CONTATO FACIL</strong></div><div class="col-7 borda">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam laboriosam non, ut a voluptatibus sit quis eveniet aperiam recusandae, modi, quasi cupiditate omnis tenetur officiis. Impedit voluptatibus voluptate neque perferendis.</div>
+<div class="col-md-4 col-sm-12  P-2 m-3"><strong>CONTATO FACIL</strong></div><div class="col-md-7 col-sm-12 m-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam laboriosam non, ut a voluptatibus sit quis eveniet aperiam recusandae, modi, quasi cupiditate omnis tenetur officiis. Impedit voluptatibus voluptate neque perferendis.</div>
 <br>
 </div>
 </div>
@@ -329,23 +429,23 @@
 
                                                         <!-- FOOTER -->
 
-<footer style="background: #d8d5d5;" >
+    <footer style="background: #d8d5d5;" >
 
-  <div class="row ">
-    <div class="col-12 justify-content-center p-2">
-      <div class="col p-3"> <h2 class="text-center">LOGOS DE REDE SOCIAIS</h2>
-      </div>
-    </div>
-
- 
+      <div class="row ">
+        <div class="col-12 justify-content-center p-2">
+          <div class="col p-3"> <h2 class="text-center mx-2"><img class="mx-2" src="img/face.png"><img  class="mx-2" src="img/insta.png"><img  class="mx-2" src="img/yout.png"><img   class="mx-2" src="img/in.png"><img  class="mx-2" src="img/whats.png"></h2>
+          </div>
+        </div>
     
-  </div >
-  <div style="background-color: #757575;">
-  <div class=" text-center text-white p-3 footer-pequeno"><small>© 2020 Copyright: EMPRESA PUBLIC<a class="text-dark fonte-public" href="#"> Publicark.com.br</a></small>
-  </div>
-  </div>
-  
-</footer>
+      
+        
+      </div >
+      <div style="background-color: #5f5d5d;">
+      <div class=" text-center text-white p-3 footer-pequeno"><small>© 2020 Copyright: EMPRESA PUBLIC<div class="text-danger fonte-public" href=""> <H2 class="text-public-red">Publicark.com.br</H2></a></small>
+      </div>
+      </div>
+      
+    </footer>
 
 
                                                         <!-- FIM DO FOOTER -->
