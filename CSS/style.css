@@ -18,12 +18,20 @@
       padding-right: 4px;
       padding-top: 6px;
       text-align: center;
+      display: block;
 
-      
+    }
+
+    .li-left {
+      text-align: left;
+      display: block;
+      margin-left: 30px;
+
     }
 
     li a {
       color: black;
+      
     }
 
     li a:hover {
